@@ -13,14 +13,35 @@ main{
     justify-content: space-around;
 }
 .slide{
-    width: 36vw;
+    width: 431.62px;
     img{
-        width: 36vw;
+        width: 431.62px;
         position: absolute;
-        height: 24vw;
+        height: 287.75px;
     }
 }
 article{
     width: 48%;
     font-size: small;
+    color: black;
+}
+h1{
+    font-size: 1.8rem;
+}
+#news{
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+    h2{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    p{
+        margin: 0;
+        margin-top: 5px;
+        font-size: 0.9rem;
+        color: black;
+        line-height: 18px;
+    }
 }
