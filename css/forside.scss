@@ -7,13 +7,13 @@ ol{
     margin: 0;
     color: #aaaaaa;
 }
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+main::after{
+    clear: both;
+    display: table;
+    content: "";
 }
 .slide{
-    width: 431.62px;
+    float: left;
     img{
         width: 431.62px;
         position: absolute;
@@ -21,9 +21,18 @@ main{
     }
 }
 article{
-    width: 48%;
+    img{
+        float: left;
+        width: 431.62px;
+        height: 287.75px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        opacity: 0;
+    }
+    width: 100%;
     font-size: small;
     color: black;
+    float: right;
 }
 h1{
     font-size: 1.8rem;

@@ -101,18 +101,14 @@ ol {
   color: #aaaaaa;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+main::after {
+  clear: both;
+  display: table;
+  content: "";
 }
 
 .slide {
-  width: 431.62px;
+  float: left;
 }
 
 .slide img {
@@ -122,9 +118,19 @@ main {
 }
 
 article {
-  width: 48%;
+  width: 100%;
   font-size: small;
   color: black;
+  float: right;
+}
+
+article img {
+  float: left;
+  width: 431.62px;
+  height: 287.75px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
 }
 
 h1 {
