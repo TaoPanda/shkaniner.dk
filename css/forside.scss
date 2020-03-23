@@ -1,56 +1,63 @@
-@import 'global';
+@import "global";
 
-ol{
-    list-style: none;
-    font-size: 12px;
-    padding: 0;
-    margin: 0;
-    color: #aaaaaa;
+main::after {
+  clear: both;
+  display: table;
+  content: "";
 }
-main::after{
-    clear: both;
-    display: table;
-    content: "";
+#slide {
+  float: left;
+  img {
+      transition: opacity linear 2s;
+    width: 431.62px;
+    position: absolute;
+    height: 287.75px;
+  }
 }
-.slide{
+article {
+  img {
     float: left;
-    img{
-        width: 431.62px;
-        position: absolute;
-        height: 287.75px;
-    }
+    width: 431.62px;
+    height: 287.75px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+  }
+  width: 100%;
+  font-size: small;
+  color: black;
+  float: right;
 }
-article{
-    img{
-        float: left;
-        width: 431.62px;
-        height: 287.75px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        opacity: 0;
-    }
-    width: 100%;
+h1 {
+  font-size: 1.8rem;
+}
+#news {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  p {
+    margin: 0;
+    margin-top: 5px;
     font-size: small;
     color: black;
-    float: right;
+    line-height: 18px;
+  }
 }
-h1{
-    font-size: 1.8rem;
-}
-#news{
-    background-color: #EEEEEE;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    padding: 20px;
-    h2{
-        margin: 0;
-        font-size: 1.2rem;
+@media screen and (max-width: 500px){
+    #news{
+        h2{
+            font-size: x-large;
+        }
+        p{
+            font-size: large;
+        }
     }
-    p{
-        margin: 0;
-        margin-top: 5px;
-        font-size: 0.9rem;
-        color: black;
-        line-height: 18px;
+    article{
+        font-size: large;
     }
 }
