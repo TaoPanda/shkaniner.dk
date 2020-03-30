@@ -1,0 +1,65 @@
+@import "global";
+
+main{
+    display: flex;
+    ul{
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        width: 200px;
+        h3{
+            margin: 3px;
+            font-size: medium;
+        }
+        a{
+            margin: 3px;
+            font-size: small;
+            text-decoration: none;
+            color: #666666;
+        }
+        a:hover{
+            color: black;
+        }
+    }
+    #pictureSection{
+        background-color: rgba(173, 173, 173, 0.233);
+        padding: 20px;
+        border-radius: 10px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .picture_area{
+        padding: 20px;
+        background-color: rgba(173, 173, 173, 0.233);
+        margin: 5px;
+        border-radius: 10px;
+        flex-grow: 0;
+        align-self: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        a:nth-of-type(4){
+            margin-top: 20px;
+        }
+        a{
+            width: 199px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        img{
+            width: 199px;
+        }
+        h3{
+            margin: 0;
+            font-size: medium;
+            color: rgb(65, 65, 65);
+        }
+        p{
+            margin: 3px;
+            font-size: small;
+            color: rgb(51, 51, 51);
+        }
+    }
+}

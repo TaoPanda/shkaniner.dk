@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  background-image: url(../img/background_top.png);
+  background-repeat: repeat-x;
+  background-color: #e4e4e4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+.wrapper {
+  width: 950px;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: #d3d3d3 0 0 5px;
+          box-shadow: #d3d3d3 0 0 5px;
+}
+
+.inner_wrapper {
+  padding: 0 25px 5px;
+  margin: 0 0 10px;
+}
+
+.inner_wrapper:first-child {
+  -webkit-box-shadow: 0 50px 40px -30px #e6e6e6;
+          box-shadow: 0 50px 40px -30px #e6e6e6;
+}
+
+.inner_wrapper:last-child {
+  padding-bottom: 50px;
+}
+
+.logo {
+  height: 238px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/background_rabbit.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.logo figcaption {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+nav ul {
+  background-color: #c8c8c8;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 10px;
+  margin: 10px 0;
+  height: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  height: 30px;
+}
+
+nav ul li .active {
+  color: #333333;
+  background-color: #d3d3d3;
+}
+
+nav ul li a:hover {
+  color: #333333;
+  background-color: #d3d3d3;
+}
+
+nav ul a {
+  width: 100%;
+  padding: 6px 10px;
+  line-height: 30px;
+  font-size: small;
+  font-weight: bold;
+  color: #666666;
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: #aaaaaa;
+}
+
+ol a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+ol a:hover {
+  text-decoration: underline;
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .logo figcaption {
+    font-size: xx-large;
+  }
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 120px;
+  }
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 175px;
+    height: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav ul a {
+    font-size: x-large;
+  }
+  ol {
+    font-size: large;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  width: 200px;
+}
+
+main ul h3 {
+  margin: 3px;
+  font-size: medium;
+}
+
+main ul a {
+  margin: 3px;
+  font-size: small;
+  text-decoration: none;
+  color: #666666;
+}
+
+main ul a:hover {
+  color: black;
+}
+
+main #pictureSection {
+  background-color: rgba(173, 173, 173, 0.233);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .picture_area {
+  padding: 20px;
+  background-color: rgba(173, 173, 173, 0.233);
+  margin: 5px;
+  border-radius: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .picture_area a:nth-of-type(4) {
+  margin-top: 20px;
+}
+
+main .picture_area a {
+  width: 199px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main .picture_area img {
+  width: 199px;
+}
+
+main .picture_area h3 {
+  margin: 0;
+  font-size: medium;
+  color: #414141;
+}
+
+main .picture_area p {
+  margin: 3px;
+  font-size: small;
+  color: #333333;
+}
+/*# sourceMappingURL=racer.css.map */
