@@ -5,29 +5,6 @@ main::after {
   display: table;
   content: "";
 }
-#slide {
-  float: left;
-  img {
-      transition: opacity linear 2s;
-    width: 431.62px;
-    position: absolute;
-    height: 287.75px;
-  }
-}
-article {
-  img {
-    float: left;
-    width: 431.62px;
-    height: 287.75px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    opacity: 0;
-  }
-  width: 100%;
-  font-size: small;
-  color: black;
-  float: right;
-}
 h1 {
   font-size: 1.8rem;
 }
@@ -48,16 +25,50 @@ h1 {
     line-height: 22px;
   }
 }
-@media screen and (max-width: 500px){
-    #news{
-        h2{
-            font-size: x-large;
-        }
-        p{
-            font-size: large;
-        }
+#slide {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 431.62px;
+  height: 287.75px;
+  img {
+    transition: opacity linear 2s;
+    position: absolute;
+    width: 431.62px;
+    height: 287.75px;
+  }
+}
+article {
+  width: 100%;
+  font-size: small;
+  color: black;
+  float: right;
+}
+@media screen and (max-width: 740px) {
+  h1{
+    font-size: large;
+  }
+  #news {
+    h2 {
+      font-size: medium;
     }
-    article{
-        font-size: large;
+    p {
+      font-size: small;
     }
+  }
+  #slide {
+    width: 50vw;
+    height: 34vw;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  article {
+    font-size: small;
+    img {
+      width: 100%;
+    }
+  }
 }

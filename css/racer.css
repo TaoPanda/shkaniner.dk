@@ -59,7 +59,7 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-left: 10px;
+  padding-left: 5px;
   margin: 10px 0;
   height: 30px;
   -ms-flex-wrap: wrap;
@@ -67,10 +67,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-nav ul li {
-  height: 30px;
 }
 
 nav ul li .active {
@@ -85,7 +81,7 @@ nav ul li a:hover {
 
 nav ul a {
   width: 100%;
-  padding: 6px 10px;
+  padding: 6px 7px;
   line-height: 30px;
   font-size: small;
   font-weight: bold;
@@ -114,9 +110,23 @@ ol a:hover {
   opacity: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  .logo {
+    height: 90px;
+    background-size: cover;
+  }
+  .logo img {
+    width: 50px;
+  }
   .logo figcaption {
-    font-size: xx-large;
+    margin-left: 5px;
+    font-size: larger;
   }
   nav ul {
     -ms-flex-wrap: wrap;
@@ -127,17 +137,17 @@ ol a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 175px;
-    height: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 33.33%;
   }
   nav ul a {
-    font-size: x-large;
+    font-size: small;
+    line-height: 15px;
   }
   ol {
-    font-size: large;
+    font-size: smaller;
   }
 }
 
@@ -168,11 +178,12 @@ main ul a {
 
 main ul a:hover {
   color: black;
+  background-color: rgba(158, 158, 158, 0.226);
 }
 
 main #pictureSection {
   background-color: rgba(173, 173, 173, 0.233);
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -187,7 +198,7 @@ main #pictureSection {
 }
 
 main .picture_area {
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(173, 173, 173, 0.233);
   margin: 5px;
   border-radius: 10px;
@@ -201,14 +212,15 @@ main .picture_area {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-main .picture_area a:nth-of-type(4) {
-  margin-top: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 99%;
 }
 
 main .picture_area a {
-  width: 199px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,10 +230,11 @@ main .picture_area a {
           flex-direction: column;
   margin: 0 10px;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
 main .picture_area img {
-  width: 199px;
+  width: 100%;
 }
 
 main .picture_area h3 {

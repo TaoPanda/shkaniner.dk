@@ -44,13 +44,12 @@ nav {
     border-radius: 3px;
     display: flex;
     list-style: none;
-    padding-left: 10px;
+    padding-left: 5px;
     margin: 10px 0;
     height: 30px;
     flex-wrap: wrap;
     align-items: center;
     li {
-      height: 30px;
       .active {
         color: #333333;
         background-color: #d3d3d3;
@@ -62,7 +61,7 @@ nav {
     }
     a {
       width: 100%;
-      padding: 6px 10px;
+      padding: 6px 7px;
       line-height: 30px;
       font-size: small;
       font-weight: bold;
@@ -88,10 +87,21 @@ ol {
 .opacityZero{
     opacity: 0;
 }
+@media screen and (max-width: 1000px){
+  .wrapper{
+    width: 100vw;
+  }
+}
 @media screen and (max-width: 500px) {
   .logo {
+    height: 90px;
+    background-size: cover;
+    img{
+      width: 50px;
+    }
     figcaption {
-        font-size: xx-large;
+      margin-left: 5px;
+        font-size: larger;
     }
   }
   nav {
@@ -100,16 +110,16 @@ ol {
       height: 120px;
       li {
         display: flex;
-        width: 175px;
-        height: 50%;
         align-items: center;
+        width: 33.33%;
       }
       a {
-        font-size: x-large;
+        font-size: small;
+        line-height: 15px;
       }
     }
   }
   ol{
-      font-size: large;
+      font-size: smaller;
   }
 }

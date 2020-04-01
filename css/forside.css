@@ -59,7 +59,7 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-left: 10px;
+  padding-left: 5px;
   margin: 10px 0;
   height: 30px;
   -ms-flex-wrap: wrap;
@@ -67,10 +67,6 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-nav ul li {
-  height: 30px;
 }
 
 nav ul li .active {
@@ -85,7 +81,7 @@ nav ul li a:hover {
 
 nav ul a {
   width: 100%;
-  padding: 6px 10px;
+  padding: 6px 7px;
   line-height: 30px;
   font-size: small;
   font-weight: bold;
@@ -114,9 +110,23 @@ ol a:hover {
   opacity: 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  .logo {
+    height: 90px;
+    background-size: cover;
+  }
+  .logo img {
+    width: 50px;
+  }
   .logo figcaption {
-    font-size: xx-large;
+    margin-left: 5px;
+    font-size: larger;
   }
   nav ul {
     -ms-flex-wrap: wrap;
@@ -127,17 +137,17 @@ ol a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 175px;
-    height: 50%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 33.33%;
   }
   nav ul a {
-    font-size: x-large;
+    font-size: small;
+    line-height: 15px;
   }
   ol {
-    font-size: large;
+    font-size: smaller;
   }
 }
 
@@ -145,34 +155,6 @@ main::after {
   clear: both;
   display: table;
   content: "";
-}
-
-#slide {
-  float: left;
-}
-
-#slide img {
-  -webkit-transition: opacity linear 2s;
-  transition: opacity linear 2s;
-  width: 431.62px;
-  position: absolute;
-  height: 287.75px;
-}
-
-article {
-  width: 100%;
-  font-size: small;
-  color: black;
-  float: right;
-}
-
-article img {
-  float: left;
-  width: 431.62px;
-  height: 287.75px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  opacity: 0;
 }
 
 h1 {
@@ -199,15 +181,53 @@ h1 {
   line-height: 22px;
 }
 
-@media screen and (max-width: 500px) {
+#slide {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width: 431.62px;
+  height: 287.75px;
+}
+
+#slide img {
+  -webkit-transition: opacity linear 2s;
+  transition: opacity linear 2s;
+  position: absolute;
+  width: 431.62px;
+  height: 287.75px;
+}
+
+article {
+  width: 100%;
+  font-size: small;
+  color: black;
+  float: right;
+}
+
+@media screen and (max-width: 740px) {
+  h1 {
+    font-size: large;
+  }
   #news h2 {
-    font-size: x-large;
+    font-size: medium;
   }
   #news p {
-    font-size: large;
+    font-size: small;
+  }
+  #slide {
+    width: 50vw;
+    height: 34vw;
+  }
+  #slide img {
+    width: 100%;
+    height: auto;
   }
   article {
-    font-size: large;
+    font-size: small;
+  }
+  article img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=forside.css.map */
