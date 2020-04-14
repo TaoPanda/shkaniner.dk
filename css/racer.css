@@ -112,7 +112,8 @@ ol a:hover {
 
 @media screen and (max-width: 1000px) {
   .wrapper {
-    width: 100vw;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -185,6 +186,7 @@ main #pictureSection {
   background-color: rgba(173, 173, 173, 0.233);
   padding: 5px;
   border-radius: 10px;
+  width: 80%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -214,13 +216,13 @@ main .picture_area {
       flex-wrap: wrap;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 99%;
+  width: 98%;
 }
 
 main .picture_area a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 30.5%;
+  width: 33.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +230,7 @@ main .picture_area a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 10px;
+  padding: 0 10px;
   text-decoration: none;
   margin-bottom: 10px;
 }
@@ -247,5 +249,46 @@ main .picture_area p {
   margin: 3px;
   font-size: small;
   color: #333333;
+}
+
+@media screen and (max-width: 800px) {
+  main .picture_area a {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main .picture_area {
+    width: 97%;
+  }
+  main .picture_area a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  main ul .inner_ul_section {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px;
+  }
+  main #pictureSection {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=racer.css.map */
