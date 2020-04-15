@@ -182,6 +182,11 @@ main ul a:hover {
   background-color: rgba(158, 158, 158, 0.226);
 }
 
+main ul .subNav_Active {
+  color: black;
+  background-color: rgba(158, 158, 158, 0.226);
+}
+
 main #pictureSection {
   background-color: rgba(173, 173, 173, 0.233);
   padding: 5px;
