@@ -155,83 +155,38 @@ ol a:hover {
   }
 }
 
-main::after {
-  clear: both;
-  display: table;
-  content: "";
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-h1 {
-  font-size: 1.8rem;
-}
-
-#news {
-  background-color: #eeeeee;
-  border-radius: 10px;
-  margin-bottom: 40px;
-  padding: 20px;
-}
-
-#news h2 {
+main ul {
+  padding: 0;
+  list-style: none;
   margin: 0;
-  font-size: 1.2rem;
+  width: 200px;
 }
 
-#news p {
-  margin: 0;
-  margin-top: 5px;
+main ul h3 {
+  margin: 3px;
+  font-size: medium;
+}
+
+main ul a {
+  margin: 3px;
   font-size: small;
+  text-decoration: none;
+  color: #666666;
+}
+
+main ul a:hover {
   color: black;
-  line-height: 22px;
+  background-color: rgba(158, 158, 158, 0.226);
 }
 
-#slide {
-  position: relative;
-  float: left;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  width: 431.62px;
-  height: 287.75px;
-}
-
-#slide img {
-  -webkit-transition: opacity linear 2s;
-  transition: opacity linear 2s;
-  position: absolute;
-  width: 431.62px;
-  height: 287.75px;
-}
-
-article {
-  width: 100%;
-  font-size: small;
+main ul .subNav_Active {
   color: black;
-  float: right;
+  background-color: rgba(158, 158, 158, 0.226);
 }
-
-@media screen and (max-width: 740px) {
-  h1 {
-    font-size: large;
-  }
-  #news h2 {
-    font-size: medium;
-  }
-  #news p {
-    font-size: small;
-  }
-  #slide {
-    width: 50vw;
-    height: 34vw;
-  }
-  #slide img {
-    width: 100%;
-    height: auto;
-  }
-  article {
-    font-size: small;
-  }
-  article img {
-    width: 100%;
-  }
-}
-/*# sourceMappingURL=forside.css.map */
+/*# sourceMappingURL=racer_subsides.css.map */
