@@ -21,9 +21,40 @@ main {
       color: black;
       background-color: rgba(158, 158, 158, 0.226);
     }
-    .subNav_Active{
+    .subNav_Active {
       color: black;
       background-color: rgba(158, 158, 158, 0.226);
+    }
+  }
+  .info_area {
+    margin: 20px;
+    flex-shrink: 10;
+  }
+  .picture_area {
+    width: 200px;
+    figure {
+      margin: 5px;
+    }
+    img {
+      width: 190px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    flex-direction: column;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      .inner_ul_section {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+    }
+    #pictureSection {
+      width: 100%;
     }
   }
 }

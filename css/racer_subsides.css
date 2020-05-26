@@ -5,6 +5,7 @@ body {
   background-color: #e4e4e4;
   font-family: Arial, Helvetica, sans-serif;
   color: #666666;
+  overflow-y: overlay;
 }
 
 .wrapper {
@@ -188,5 +189,49 @@ main ul a:hover {
 main ul .subNav_Active {
   color: black;
   background-color: rgba(158, 158, 158, 0.226);
+}
+
+main .info_area {
+  margin: 20px;
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
+}
+
+main .picture_area {
+  width: 200px;
+}
+
+main .picture_area figure {
+  margin: 5px;
+}
+
+main .picture_area img {
+  width: 190px;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  main ul .inner_ul_section {
+    width: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px;
+  }
+  main #pictureSection {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=racer_subsides.css.map */
