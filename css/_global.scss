@@ -81,15 +81,22 @@ ol {
   a {
     color: #aaaaaa;
     text-decoration: none;
+    margin: 2px;
   }
   a:hover {
     text-decoration: underline;
+  }
+  p {
+    margin: 2px;
   }
 }
 .opacityZero {
   opacity: 0;
 }
 @media screen and (max-width: 1000px) {
+  body {
+    overflow-y: auto;
+  }
   .wrapper {
     width: 100%;
     margin: 0;

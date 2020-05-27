@@ -29,6 +29,9 @@ main {
   .info_area {
     margin: 20px;
     flex-shrink: 10;
+    p {
+      font-size: small;
+    }
   }
   .picture_area {
     width: 200px;
@@ -37,6 +40,26 @@ main {
     }
     img {
       width: 190px;
+    }
+    figcaption {
+      font-size: 0.9em;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    flex-wrap: wrap;
+    .info_area {
+      width: 50%;
+      flex-grow: 1;
+    }
+    .picture_area {
+      display: flex;
+      margin: 3%;
+      width: 94%;
+      img {
+        width: 98%;
+      }
     }
   }
 }
@@ -53,8 +76,8 @@ main {
         padding: 5px;
       }
     }
-    #pictureSection {
-      width: 100%;
+    .info_area {
+      width: 90%;
     }
   }
 }

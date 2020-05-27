@@ -104,10 +104,15 @@ ol {
 ol a {
   color: #aaaaaa;
   text-decoration: none;
+  margin: 2px;
 }
 
 ol a:hover {
   text-decoration: underline;
+}
+
+ol p {
+  margin: 2px;
 }
 
 .opacityZero {
@@ -115,6 +120,9 @@ ol a:hover {
 }
 
 @media screen and (max-width: 1000px) {
+  body {
+    overflow-y: auto;
+  }
   .wrapper {
     width: 100%;
     margin: 0;
