@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background-image: url(../img/background_top.png);
+  background-repeat: repeat-x;
+  background-color: #e4e4e4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  overflow-y: overlay;
+}
+
+.wrapper {
+  width: 950px;
+  margin: 0 auto;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: #d3d3d3 0 0 5px;
+          box-shadow: #d3d3d3 0 0 5px;
+}
+
+.inner_wrapper {
+  padding: 0 25px 5px;
+  margin: 0 0 10px;
+}
+
+.inner_wrapper:first-child {
+  -webkit-box-shadow: 0 50px 40px -30px #e6e6e6;
+          box-shadow: 0 50px 40px -30px #e6e6e6;
+}
+
+.inner_wrapper:last-child {
+  padding-bottom: 50px;
+}
+
+.logo {
+  height: 238px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/background_rabbit.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.logo figcaption {
+  font-weight: bolder;
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+nav ul {
+  background-color: #c8c8c8;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 5px;
+  margin: 10px 0;
+  height: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li .active {
+  color: #333333;
+  background-color: #d3d3d3;
+}
+
+nav ul li a:hover {
+  color: #333333;
+  background-color: #d3d3d3;
+}
+
+nav ul a {
+  width: 100%;
+  padding: 6px 7px;
+  line-height: 30px;
+  font-size: small;
+  font-weight: bold;
+  color: #666666;
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: #aaaaaa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ol a {
+  color: #aaaaaa;
+  text-decoration: none;
+  margin: 2px;
+}
+
+ol a:hover {
+  text-decoration: underline;
+}
+
+ol p {
+  margin: 2px;
+}
+
+.opacityZero {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-y: auto;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    height: 90px;
+    background-size: cover;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo figcaption {
+    margin-left: 5px;
+    font-size: larger;
+  }
+  nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 120px;
+  }
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 33.33%;
+  }
+  nav ul a {
+    font-size: small;
+    line-height: 15px;
+  }
+  ol {
+    font-size: smaller;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  width: 200px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+main ul h3 {
+  margin: 3px;
+  font-size: medium;
+}
+
+main ul a {
+  margin: 3px;
+  font-size: small;
+  text-decoration: none;
+  color: #666666;
+}
+
+main ul a:hover {
+  color: black;
+  background-color: rgba(158, 158, 158, 0.226);
+}
+
+main ul .subNav_Active_a {
+  color: black;
+  background-color: rgba(158, 158, 158, 0.226);
+}
+
+main ul .subNav_Active_li a {
+  background-color: rgba(158, 158, 158, 0.226);
+}
+
+main ul .indent {
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+main .content h1 {
+  width: 100%;
+  height: 20%;
+}
+
+main .picture_area {
+  width: 100%;
+}
+
+main .picture_area img {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 865px) {
+  main ul {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
+  main .content {
+    -ms-flex-negative: 4;
+        flex-shrink: 4;
+  }
+  main .picture_area {
+    -ms-flex-negative: 4;
+        flex-shrink: 4;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .content {
+    width: 60%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  main .picture_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .picture_area img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main ul {
+    width: 100%;
+    text-align: center;
+  }
+  main ul .subNav_Active_li ul a {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=tegning_subsides.css.map */
