@@ -1,90 +1,9 @@
-<!DOCTYPE html>
-<html lang="da">
-  <head>
-    <!-- Hotjar Tracking Code for My site -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 2073271, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-X0J31FSVXL"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-X0J31FSVXL");
-    </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="../css/racer.css" />
-    <title>shkaniner.dk</title>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <div class="inner_wrapper">
-        <header>
-          <figure class="logo">
-            <img src="../img/SHKLogo.jpg" alt="shkaniner_Logo" />
-            <figcaption>Schecke Hollænder klubben</figcaption>
-          </figure>
-          <nav>
-            <ul>
-              <li>
-                <a href="../index.html">Forside</a>
-              </li>
-              <li>
-                <a href="./" class="active">Racer</a>
-              </li>
-              <li>
-                <a href="../Tegning/">Tegning</a>
-              </li>
-              <li>
-                <a href="../Find_en_avler/">Find en avler</a>
-              </li>
-              <li>
-                <a href="../Bestyrelsen/">Bestyrelsen</a>
-              </li>
-              <li>
-                <a href="../Klubben/">Klubben</a>
-              </li>
-              <li>
-                <a href="../Bliv_medlem/">Bliv medlem</a>
-              </li>
-              <li>
-                <a href="../Kontakt/">Kontakt</a>
-              </li>
-              <li>
-                <a href="../Links/">Links</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-      <ol class="inner_wrapper">
-        <li>Racer</li>
-      </ol>
-      <main class="inner_wrapper">
+<?php
+  $css = "racer";
+  $title = "Racer";
+  $active = "racer";
+  include "./includes/header.php";
+?>
         <ul>
           <div class="inner_ul_section">
             <li><h3>Kæmperacer</h3></li>
